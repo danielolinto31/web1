@@ -44,7 +44,7 @@ public class LoginServlet extends HttpServlet {
 			if (operacao.equals("logout")) {
 				/* Destroe a sessao ativa */
 				request.getSession().invalidate();
-				response.sendRedirect("/");
+				response.sendRedirect(request.getContextPath() + "/");
 			}
 		} else {
 
