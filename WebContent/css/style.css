@@ -1,47 +1,53 @@
 @CHARSET "ISO-8859-1";
 
-body{
+body {
 	color: #000;
 	font-family: sans-serif;
 	font-size: 12px;
 	background-image: url("../img/gplaypattern.png");
 }
 
-h1{
+h1 {
 	margin-top: 10px;
 	text-align: center;
 }
 
-hr{
+hr {
 	border: 2px dotted #CCC;
 }
 
-a{
+a {
 	color: #000;
 }
 
-a:HOVER{
+a:HOVER {
 	text-decoration: none;
 }
 
-ul li{
+ul li {
 	padding: 6px 0;
 }
 
-table{
+table {
 	width: 100%;
 }
-table thead tr th{
+
+table thead tr th {
 	font-size: 22px;
 	padding: 10px 0;
 }
 
-table tbody tr td{
+table tbody tr td {
 	padding: 3px 5px;
 }
 
-table thead tr:first-child {background: #CCC}
-table tbody tr:nth-child(2n+2) {background: #EEE}
+table thead tr:first-child {
+	background: #CCC
+}
+
+table tbody tr:nth-child(2n+2) {
+	background: #EEE
+}
 
 #wrapper {
 	width: 565px;
@@ -59,9 +65,9 @@ table tbody tr:nth-child(2n+2) {background: #EEE}
 	padding: 10px;
 }
 
-#wrapper-login{
+#wrapper-login {
 	width: 300px;
-	height:146px;
+	height: 146px;
 	background-color: #FFF;
 	border: 1px solid #CCC;
 	padding: 10px;
@@ -72,24 +78,25 @@ table tbody tr:nth-child(2n+2) {background: #EEE}
 	margin-top: -73px;
 }
 
-.coluna{
+.coluna {
 	text-align: right;
 	font-weight: bold;
 }
 
-button{
-	padding:5px 10px;
+button {
+	padding: 5px 10px;
 }
-button:hover{
+
+button:hover {
 	cursor: pointer;
 }
 
-.text{
+.text {
 	padding: 3px 6px;
 	font-size: 11px;
 	font-family: sans-serif;
 }
 
-.centralizar{
+.centralizar {
 	text-align: center;
 }

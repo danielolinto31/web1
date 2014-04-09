@@ -1,0 +1,140 @@
+@CHARSET "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #66757f;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	background-image: url("../img/grey_wash_wall.png");
+}
+
+a {
+	color: #333333;
+	text-decoration: none;
+}
+
+a:HOVER {
+	text-decoration: underline;
+	color: #555555;
+}
+
+p {
+	color: #a59999;
+	margin-top: 8px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+.topo {
+	background: url("/web1/img/back-topo.png");
+	height: 48px;
+}
+
+.topo .topo-central {
+	width: 1150px;
+	margin: 0 auto;
+}
+
+.topo .left {
+	float: left;
+	vertical-align: middle;
+}
+
+.left ul, .right ul {
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+
+.left ul li, .right ul li { 
+	display: inline;
+ }
+
+.left ul li a, .right ul li a {
+	padding: 12px 10px 9px 10px;
+	display: inline-block;
+	font-size: 13px;
+ 
+	/* visual do link */
+	text-decoration: none;
+}
+
+.left img, .right img{
+	vertical-align: -30%;
+}
+
+.left ul li a:hover, .right ul li a:hover {
+	border-bottom:4px solid #808080;
+}
+
+.topo .right {
+	float: right;
+	width: 200px;
+	text-align: right;
+}
+
+.wrapper {
+	width: 900px;
+	height: 90%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.side-left {
+	width: 285px;
+	float: left;
+}
+
+.side-left .box {
+	width: 100%;
+	height: 200px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: white;
+}
+
+.side-left .box2 {
+	width: 100%;
+	height: 200px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: white;
+	margin-top: 10px;
+}
+
+.side-right {
+	width: 600px;
+	height: 200px;
+	float: right;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: white;
+}
+
+.side-right .titulo {
+	border-bottom: 1px solid #CCC;
+	padding: 10px;
+	font-size: 22px;
+}
+
+.rodape {
+	text-align: center;
+	height: 32px;
+	font-size: 11px;
+	color: #FFF;
+	padding-top: 20px;
+	bottom: 0;
+	clear: both;
+}
