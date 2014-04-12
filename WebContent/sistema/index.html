@@ -4,17 +4,6 @@
 <meta charset="ISO-8859-1">
 <title>WEB I - Daniel Olinto</title>
 <link rel="stylesheet" type="text/css" href="/web1/css/interno.css">
-<script type="text/javascript" charset="utf-8">
-	//<![CDATA[
-	jQuery(function() {
-		jQuery('.menu a').each(function() {
-			if (jQuery(this).attr('href') === window.location.pathname) {
-				jQuery(this).addClass('current');
-			}
-		});
-	});
-	//]]>
-</script>
 </head>
 <body>
 
@@ -22,21 +11,21 @@
 		<div class="topo-central">
 			<nav class="left">
 				<ul>
-					<li><a href="index.html" title="Início"><img
-							src="../img/icon-home.png" /> Início</a></li>
+					<li><a href="/web1/sistema/index.html" class="active"
+						title="Início"><img src="/web1/img/icon-home.png" /> Início</a></li>
 					<li><a href="#" title="Notificações"><img
-							src="../img/icon-notification.png" /> Notificações</a></li>
+							src="/web1/img/icon-notification.png" /> Notificações</a></li>
 					<li><a href="#" title="Descobrir"><img
-							src="../img/icon-hashtag.png" /> Descobrir</a></li>
+							src="/web1/img/icon-hashtag.png" /> Descobrir</a></li>
 					<li><a href="#" title="Conta"><img
-							src="../img/icon-user.png" /> Conta</a></li>
+							src="/web1/img/icon-user.png" /> Conta</a></li>
 				</ul>
 			</nav>
 			<!-- .left -->
 			<nav class="right">
 				<ul>
-					<li><a href="#" title="Sair"><img
-							src="../img/icon-exit.png" /> Sair</a></li>
+					<li><a href="LoginServlet?operacao=logout" title="Sair"><img
+							src="/web1/img/icon-exit.png" /> Sair</a></li>
 				</ul>
 			</nav>
 			<!-- .right -->
@@ -47,16 +36,35 @@
 
 	<div class="wrapper">
 		<div class="side-left">
-			<div class="box"></div>
+			<div class="box">
+				<a href="#">
+					<div class="top">
+						<img src="/web1/img/icon-big-user.png" width="50" />
+						<div class="nome">Daniel Olinto</div>
+						<!-- .nome -->
+					</div> <!-- .top -->
+				</a>
+				<div class="detalhe"></div>
+				<!-- .detalhe -->
+				<div class="publicacao">
+					<form action="PublicarServlet" method="post">
+						<textarea name="publicar" title="Publique aqui" maxlength="150" onclick="this.value='';"
+							onblur="javascript:if (this.value=='') {this.value='Publique aqui'};"></textarea>
+	
+						<input type="submit" value="Publicar" />
+					</form>
+				</div>
+				<!-- .publicacao -->
+			</div>
 			<!-- .box -->
-			<div class="box2"></div>
-			<!-- .box2 -->
 			<div class="box2"></div>
 			<!-- .box2 -->
 		</div>
 		<!-- .side-left -->
 		<div class="side-right">
-			<div class="titulo">Tweets</div>
+			<form action="TimelineServlet" method="post">
+				<div class="titulo">Tweets</div>
+			</form>
 		</div>
 		<!-- .side-right -->
 

@@ -83,7 +83,7 @@ public class LoginServlet extends HttpServlet {
 			String login = request.getParameter("login");
 			String senha = request.getParameter("senha");
 
-			if (login.equals("admin") && senha.equals("12345")) {
+			if (login.equals("danielolinto") && senha.equals("310190")) {
 				HttpSession session = request.getSession(true);
 
 				session.setAttribute("usuarioLogado", login);
@@ -129,7 +129,7 @@ public class LoginServlet extends HttpServlet {
 	private void loginComSucesso(HttpServletRequest request,
 			HttpServletResponse response) throws IOException, ServletException {
 
-		request.getRequestDispatcher("/sistema/menu.html").forward(request,
+		request.getRequestDispatcher("/sistema/index.html").forward(request,
 				response);
 
 	}
